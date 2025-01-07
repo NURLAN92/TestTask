@@ -16,11 +16,11 @@ To set up this project on your local machine, follow the steps below:
 1. Clone the Repository
 bash
 Copy code
-git clone https://github.com/yourusername/yourprojectname.git
+git clone https://github.com/NURLAN92/TestTask.git
 2. Navigate to the Project Directory
 bash
 Copy code
-cd yourprojectname
+cd TestTask
 3. Install Dependencies
 Ensure that you have the correct version of .NET 9 installed. If you don't have it, download it from the official .NET website.
 
