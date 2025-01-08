@@ -67,12 +67,12 @@ namespace TestTask.Infrastructure.Services
             var user = await _context.Users.Where(x => x.Name == request.Name).FirstOrDefaultAsync();
 
             if (user == null)
-                return ApiResult<LoginResponse>.Error(ErrorCodes.EMAIL_OR_PASSWORD_IS_NOT_CORRECT);
+                return ApiResult<LoginResponse>.Error(ErrorCodes.NAME_OR_PASSWORD_IS_NOT_CORRECT);
 
             bool check = user.CheckPassword(request.Password);
 
             if (!check)
-                return ApiResult<LoginResponse>.Error(ErrorCodes.EMAIL_OR_PASSWORD_IS_NOT_CORRECT);
+                return ApiResult<LoginResponse>.Error(ErrorCodes.NAME_OR_PASSWORD_IS_NOT_CORRECT);
 
             var token = _jwtService.GenerateJwtToken(user.Id, user.Email);
 

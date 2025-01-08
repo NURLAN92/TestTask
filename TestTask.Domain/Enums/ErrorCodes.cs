@@ -9,7 +9,7 @@ namespace TestTask.Domain.Enums
 {
     public enum ErrorCodes
     {
-        [Description("Invalid username or password.")]
+        [Description("Invalid name or password.")]
         NAME_OR_PASSWORD_IS_NOT_CORRECT = 1_0_0,
 
         [Description("User already exists.")]
@@ -24,7 +24,6 @@ namespace TestTask.Domain.Enums
         [Description("There are some validations error.")]
         VALIDATION_ERROR = 3_0_0,
 
-        [Description("Invalid EMAIL OR PASSWORD.")]
-        EMAIL_OR_PASSWORD_IS_NOT_CORRECT
+        
     }
 }
