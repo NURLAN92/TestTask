@@ -71,6 +71,7 @@ namespace TestTask.Infrastructure.Services
 
             bool check = user.CheckPassword(request.Password);
 
+
             if (!check)
                 return ApiResult<LoginResponse>.Error(ErrorCodes.NAME_OR_PASSWORD_IS_NOT_CORRECT);
 
